@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rishab Dey | Data Scientist</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- DESKTOP NAV -->
+    <nav id="desktop-nav">
+      <div class="logo">RD<span class="logo-dot">.</span></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HAMBURGER NAV -->
+    <nav id="hamburger-nav">
+      <div class="logo">RD<span class="logo-dot">.</span></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO / PROFILE SECTION -->
+    <section id="profile">
+      <div class="hero-bg-grid"></div>
+      <div class="section__pic-container">
+        <img src="./assets/Photo_RishabDey.png" alt="Rishab Dey" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Rishab Dey</h1>
+        <p class="section__text__p2">Data Scientist &amp; ML Engineer</p>
+        <p class="section__text__p3">M.Sc. Data Science · Dortmund, Germany</p>
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="window.open('./assets/CV_RishabDey.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-2" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <a href="https://www.linkedin.com/in/rishab-dey" target="_blank" aria-label="LinkedIn">
+            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="https://github.com/RishabDey" target="_blank" aria-label="GitHub">
+            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            </svg>
+          </a>
+          <a href="https://kaggle.com/cr7rishab" target="_blank" aria-label="Kaggle">
+            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.246.495-.246h3.239c.144 0 .236.06.285.18.046.149.034.255-.036.315l-6.555 6.344 6.836 8.507c.095.104.117.208.07.336"/>
+            </svg>
+          </a>
+          <a href="https://bit.ly/3QAcNMD" target="_blank" aria-label="Notion Portfolio">
+            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.167V6.354c0-.606-.233-.933-.748-.887l-15.177.887c-.56.047-.747.327-.747.934zm14.337.745c.093.42 0 .84-.42.888l-.7.14v10.264c-.608.327-1.168.514-1.635.514-.748 0-.935-.234-1.495-.933l-4.577-7.186v6.952L12.21 19s0 .84-1.168.84l-3.222.186c-.093-.186 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.456-.233 4.764 7.279v-6.44l-1.215-.139c-.093-.514.28-.887.747-.933zM1.936 1.035l13.31-.98c1.634-.14 2.055-.047 3.082.7l4.249 2.986c.7.513.934.653.934 1.213v16.378c0 1.026-.373 1.634-1.68 1.726l-15.458.934c-.98.047-1.448-.093-1.962-.747l-3.129-4.06c-.56-.747-.793-1.306-.793-1.96V2.667c0-.839.374-1.54 1.447-1.632z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container about-centered">
+        <div class="about-details-container about-details-full">
+          <div class="about-containers">
+            <div class="details-container">
+              <span class="details-icon">🎓</span>
+              <h3>Education</h3>
+              <p>M.Sc. Data Science<br />Universität Potsdam</p>
+            </div>
+            <div class="details-container">
+              <span class="details-icon">💼</span>
+              <h3>Experience</h3>
+              <p>3+ Years<br />Data Analysis &amp; ML</p>
+            </div>
+            <div class="details-container">
+              <span class="details-icon">📍</span>
+              <h3>Location</h3>
+              <p>Dortmund<br />Germany</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p class="about-summary">
+              Data Scientist with 3+ years of experience applying machine learning and statistical methods 
+              across research and industry settings. I specialize in predictive modeling, time-series analysis, 
+              and explainable AI — turning complex data into actionable insights. I've built automated data 
+              pipelines, interactive dashboards, and multi-agent LLM systems for research automation. 
+              Proficient in Python, SQL, and TensorFlow, with deep expertise in model evaluation, 
+              feature engineering, and interpretability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+      <p class="section__text__p1">My Professional Journey</p>
+      <h1 class="title">Work Experience</h1>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Feb 2023 – Mar 2026</div>
+          <div class="timeline-content">
+            <h3 class="timeline-role">Data Analyst Student Assistant</h3>
+            <p class="timeline-org">Fraunhofer-Institut für Materialfluss und Logistik · Dortmund, Germany</p>
+            <p class="timeline-tag">Sustainability &amp; Circular Economy</p>
+            <ul class="timeline-bullets">
+              <li>Designed and deployed a secure multi-user analytics dashboard replacing manual Excel-based sustainability reporting, automating GHG and KPI calculations for 120 companies with 1,500+ multi-year data submissions.</li>
+              <li>Processed international trade datasets on plastics &amp; rubber flows, building interactive geospatial visualizations to identify material transfer patterns and cross-border logistics trends.</li>
+              <li>Built a real-time environmental monitoring system integrating IoT sensor streams (Arduino) with a Python analytics layer, enabling live tracking of temperature, location, speed, and UV metrics for Digital Product Passport (DPP) initiatives.</li>
+            </ul>
+            <div class="tool-tags">
+              <span>Python</span><span>Streamlit</span><span>Pandas</span><span>NumPy</span>
+              <span>Plotly</span><span>Folium</span><span>Seaborn</span><span>Arduino</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Feb 2019 – Mar 2020</div>
+          <div class="timeline-content">
+            <h3 class="timeline-role">Data Analyst Intern</h3>
+            <p class="timeline-org">Breezeitech Services Pvt. Ltd. · Mumbai, India</p>
+            <ul class="timeline-bullets">
+              <li>Analyzed inventory and product performance data (routers, CCTV systems) to evaluate cost efficiency, defect rates, and sales trends, delivering insights for pricing and procurement decisions.</li>
+              <li>Performed exploratory and statistical analysis on monthly spending metrics, building visual dashboards to identify performance patterns and optimization opportunities.</li>
+            </ul>
+            <div class="tool-tags">
+              <span>Python</span><span>NumPy</span><span>Pandas</span><span>Plotly</span>
+              <span>Matplotlib</span><span>Seaborn</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='#skills'" />
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+      <p class="section__text__p1">What I Work With</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h2 class="experience-sub-title">Programming</h2>
+          <div class="skill-chips">
+            <span class="chip">Python</span>
+            <span class="chip">R</span>
+            <span class="chip">SQL</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">MATLAB</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h2 class="experience-sub-title">ML &amp; AI</h2>
+          <div class="skill-chips">
+            <span class="chip">Scikit-learn</span>
+            <span class="chip">TensorFlow</span>
+            <span class="chip">Keras</span>
+            <span class="chip">Statsmodels</span>
+            <span class="chip">SpaCy</span>
+            <span class="chip">LangChain</span>
+            <span class="chip">Transformers</span>
+            <span class="chip">RAG</span>
+            <span class="chip">Prompt Engineering</span>
+            <span class="chip">Time Series Analysis</span>
+            <span class="chip">Explainable AI</span>
+            <span class="chip">Feature Engineering</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h2 class="experience-sub-title">Data &amp; Visualization</h2>
+          <div class="skill-chips">
+            <span class="chip">Pandas</span>
+            <span class="chip">NumPy</span>
+            <span class="chip">Plotly</span>
+            <span class="chip">Matplotlib</span>
+            <span class="chip">Seaborn</span>
+            <span class="chip">Streamlit</span>
+            <span class="chip">Power BI</span>
+            <span class="chip">Tableau</span>
+            <span class="chip">Looker Studio</span>
+            <span class="chip">Folium</span>
+            <span class="chip">Geospatial Analysis</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h2 class="experience-sub-title">MLOps &amp; Tools</h2>
+          <div class="skill-chips">
+            <span class="chip">MLflow</span>
+            <span class="chip">Git</span>
+            <span class="chip">Selenium</span>
+            <span class="chip">BeautifulSoup</span>
+            <span class="chip">rvest</span>
+            <span class="chip">Arduino</span>
+            <span class="chip">PLC Programming</span>
+            <span class="chip">Figma</span>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='#projects'" />
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My</p>
+      <h1 class="title">Projects</h1>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-card-header">
+            <span class="project-tag">NLP · LLM · Agents</span>
+          </div>
+          <h2 class="project-title">Source-Aware Multi-Agent Research Pipeline</h2>
+          <p class="project-desc">A multi-agent system generating structured research reports with explicit source attribution. Orchestrates agents for web search (Tavily API), content extraction, report generation, and evaluation — with a real-time Streamlit interface and downloadable outputs.</p>
+          <div class="tool-tags">
+            <span>Python</span><span>LangChain</span><span>Mistral AI</span>
+            <span>Tavily API</span><span>BeautifulSoup</span><span>Streamlit</span>
+          </div>
+          <div class="project-links">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RishabDey/ResearchAssistant'">GitHub</button> 
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://researchassistant-reportgenerator.streamlit.app/'">Demo</button> 
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <span class="project-tag">Analytics Portfolio · Notion</span>
+          </div>
+          <h2 class="project-title">WorldLytics : Interactive Data Insights</h2>
+          <p class="project-desc">An evolving analytics portfolio featuring comparative insights across real-world datasets. Includes football analytics, housing prices, COVID-19 tracking and more — with supporting reports and visualizations, all documented on Notion.</p>
+          <div class="tool-tags">
+            <span>Python</span><span>R</span><span>Plotly</span><span>Seaborn</span><span>Notion</span>
+          </div>
+          <div class="project-links">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.notion.so/WorldLytics-34a6b204e2c48063b181ce576f631fe5?source=copy_link'">View on Notion</button>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <span class="project-tag">Deep Learning · XAI · Computer Vision</span>
+          </div>
+          <h2 class="project-title">Explainable AI for Time Series Monitoring</h2>
+          <p class="project-desc">Master's Thesis project. Developed a CNN-LSTM model predicting moisture content from hyperspectral NIR time-series data (R² = 0.87). Applied Grad-CAM and FusionGrad for interpretability, identifying key spectral bands and spatial regions.</p>
+          <div class="tool-tags">
+            <span>Python</span><span>TensorFlow</span><span>NumPy</span>
+            <span>Pandas</span><span>Scikit-learn</span>
+          </div>
+          <div class="project-links">
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RishabDey/REPO_NAME'">GitHub</button> -->
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <span class="project-tag">Sports Analytics · Web Scraping</span>
+          </div>
+          <h2 class="project-title">Football Analytics : Europe's Top 5 Leagues</h2>
+          <p class="project-desc">Scraped Transfermarkt for player performance, wages, and club spending across Europe's top 5 leagues. Built rich visualizations and authored an analytical report with insights on the data.</p>
+          <div class="tool-tags">
+            <span>R</span><span>rvest</span><span>Selenium</span><span>Python</span>
+            <span>Plotly</span><span>Seaborn</span>
+          </div>
+          <div class="project-links">
+            <!--<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.notion.so/WorldLytics-34a6b204e2c48063b181ce576f631fe5?source=copy_link'">View on Notion</button>-->
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RishabDey/REPO_NAME'">GitHub</button> -->
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <span class="project-tag">Deep Learning · Dimensionality Reduction</span>
+          </div>
+          <h2 class="project-title">Fashion MNIST Image Classification</h2>
+          <p class="project-desc">Built a CNN-based classifier on Fashion-MNIST, comparing performance across optimizers. Applied PCA, Kernel PCA, and t-SNE for dimensionality reduction and cluster visualization to analyze feature separability.</p>
+          <div class="tool-tags">
+            <span>Python</span><span>TensorFlow</span><span>Keras</span>
+            <span>Scikit-learn</span><span>Matplotlib</span>
+          </div>
+          <div class="project-links">
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RishabDey/REPO_NAME'">GitHub</button> -->
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <span class="project-tag">Geospatial · Public Health</span>
+          </div>
+          <h2 class="project-title">Geospatial Tracking of COVID-19 Spread</h2>
+          <p class="project-desc">Visualized COVID-19 spread across India, Italy, and South Korea. State-wise visualization for India highlighting cases, deaths, active cases, and recoveries, using Folium for interactive geospatial mapping.</p>
+          <div class="tool-tags">
+            <span>Python</span><span>Folium</span><span>Plotly</span>
+            <span>Pandas</span><span>Seaborn</span>
+          </div>
+          <div class="project-links">
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RishabDey/REPO_NAME'">GitHub</button> -->
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <span class="project-tag">Statistical Analysis · Real Estate</span>
+          </div>
+          <h2 class="project-title">Comparative Analysis of German Housing Prices</h2>
+          <p class="project-desc">Used Immoscout24 data to compare rental prices across four German cities. Applied ANOVA, t-tests, two-sample tests, and Bonferroni correction to address multiple testing issues.</p>
+          <div class="tool-tags">
+            <span>R</span><span>dplyr</span><span>ggplot2</span><span>ggpubr</span>
+          </div>
+          <div class="project-links">
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RishabDey/REPO_NAME'">GitHub</button> -->
+          </div>
+        </div>
+
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='#contact'" />
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <svg class="contact-svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+          <p><a href="mailto:rishabdey.cr7@gmail.com">rishabdey.cr7@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <svg class="contact-svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+          <p><a href="https://www.linkedin.com/in/rishab-dey" target="_blank">linkedin.com/in/rishab-dey</a></p>
+        </div>
+        <div class="contact-info-container">
+          <svg class="contact-svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+          </svg>
+          <p>44227 Dortmund, Germany</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>© 2026 Rishab Dey · Built with purpose.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
