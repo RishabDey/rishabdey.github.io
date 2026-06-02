@@ -7,6 +7,7 @@
   --bg: #0a0a0f;
   --bg-card: #111118;
   --bg-card-hover: #17171f;
+  --bg-card-social: #b22abe;
   --border: #2a2a3a;
   --accent: #6c63ff;
   --accent-soft: rgba(108, 99, 255, 0.15);
@@ -14,7 +15,7 @@
   --accent3: #3ee246;
   --accent4: rgb(171, 230, 132);
   --text-primary: #f0f0f8;
-  --text-secondary: #cacae4;
+  --text-secondary: #ededf1;
   --text-muted: #bdbdd8;
   --mono: "Space Mono", monospace;
   --sans: "DM Sans", sans-serif;
@@ -114,7 +115,7 @@ nav {
   letter-spacing: 0.05em;
 }
 .logo-dot {
-  color: var(--accent);
+  color: var(--accent5);
 }
 
 .logo:hover {
@@ -266,8 +267,8 @@ section {
 
 .section__pic-container {
   display: flex;
-  height: 360px;
-  width: 360px;
+  height: 320px;
+  width: 320px;
   margin: auto 0;
   flex-shrink: 0;
 }
@@ -278,8 +279,8 @@ section {
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid var(--accent);
-  box-shadow: 0 0 40px rgba(108, 99, 255, 0.3);
-  filter: grayscale(15%);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+  filter: grayscale(0%);
 }
 
 .section__text {
@@ -364,10 +365,10 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  background: var(--bg-card);
+  background: var(--bg-card-social);
   border: 1px solid var(--border);
   color: var(--text-secondary);
   transition: all 250ms ease;
